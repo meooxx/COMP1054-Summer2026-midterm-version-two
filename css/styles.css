@@ -28,6 +28,7 @@ nav {
   padding: 1rem 2rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   position: sticky;
+  top: 0;
 }
 
 nav .logo {
@@ -42,6 +43,22 @@ nav ul {
 }
 
 /* 4. Style the navigation links (font, spacing, color, hover) (2 marks) */
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  padding: 0.5rem 0.75rem;
+
+
+}
+nav a:hover {
+  color: #e63946;
+  text-decoration: underline;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
 
 
 /* Hero Section */
@@ -50,16 +67,24 @@ nav ul {
   color: white;
   text-align: center;
   padding: 6rem 2rem;
+  background: url('../assets/mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
 }
 
 .hero h1 {
   /* 6. Set font size equal to 25px using rem units (1 mark) */
   font-weight: 700;
+  font-size: 2.5rem;
 }
 
 .hero p {
   margin-top: 1rem;
   /* 7. Set font size equal to 20px using rem units (1 mark) */
+  font-size: 2rem;
+
 }
 
 /* Section Base */
@@ -74,6 +99,7 @@ section {
   font-size: 3.2rem;
   margin-bottom: 2rem;
   /* 8. Make text uppercase (1 mark) */
+  text-transform: uppercase;
   color: #1f2937;
 }
 
@@ -82,6 +108,7 @@ section {
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: relative; /* Needed for badge positioning */
 }
 
 .badge {
@@ -92,6 +119,10 @@ section {
   border-radius: 999px;
   font-size: 1.2rem;
   font-weight: bold;
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+
 }
 
 /* Contact Form */
@@ -114,6 +145,12 @@ section {
 .contact-form input,
 .contact-form textarea {
   /* 10. Style form inputs and textarea based on mockup (4 marks) */
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1.6rem;
 }
 
 .contact-form button {
