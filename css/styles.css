@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   /* 1. Set box-sizing so padding and border are included in element size (1 mark) */
+  box-sizing: border-box;
+
 }
 
 html {
@@ -13,6 +15,7 @@ body {
   /* 2. Use a custom web font (2 marks) */
   color: #222;
   line-height: 1.6;
+  font-family: 'Roboto', sans-serif;;
 }
 
 /* Navigation */
@@ -24,6 +27,7 @@ nav {
   align-items: center;
   padding: 1rem 2rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
 }
 
 nav .logo {
